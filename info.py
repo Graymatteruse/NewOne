@@ -37,7 +37,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
@@ -47,7 +47,7 @@ IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [FHDmovies24x7](https://telegram.me/FHDmovies24x7)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [FHDmovies24x7](https://telegram.me/FHDmovies24x7)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "📹: {title} \n🌟: {rating} \n🎭: {genres} \n📆: {year} \n⏰: {runtime} \n🎙️: {languages} \n🔖: {plot} \n👑: @FHDmovies24x7)
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "📹: {title} \n🌟: {rating} \n🎭: {genres} \n📆: {year} \n⏰: {runtime} \n🎙️: {languages} \n🔖: {plot} \n👑: @FHDmovies24x7")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
